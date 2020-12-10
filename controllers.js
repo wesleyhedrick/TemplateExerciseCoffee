@@ -70,7 +70,19 @@ const orderList = (req, res) => {
     // I want: <li>espresso</li>
 }
 
+// A controller is just a (req, res) => {}
+const orderDetails = (req, res) => {
+    // This controller should send back...
+    // all the order objects for a 
+    // particular kind. (I think lol)
+
+    // and how do I even get to this route?
+    res.send('does this fn work at all?');
+};
+
+
 module.exports = {
     home,
-    orderList
+    orderList,
+    orderDetails
 };

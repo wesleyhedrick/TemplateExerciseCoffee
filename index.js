@@ -21,6 +21,8 @@ app.use(logger);
 const controllers = require('./controllers');
 app.get('/', controllers.home);
 app.get('/orders', controllers.orderList)
+app.get('/orders/:orderType', controllers.orderDetails);
+
 
 app.get('*', (req, res) => {
     res.status(404).send('<h1>Page not found</h1>');
