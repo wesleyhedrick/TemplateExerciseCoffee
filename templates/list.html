@@ -1,5 +1,8 @@
 ${header}
 <ul>
-    ${pets}
+${
+    orderTypes.map(t => `<li>${t} ${pricePerType[t]}</li>`)
+              .join('')
+}
 </ul>
 ${footer}
