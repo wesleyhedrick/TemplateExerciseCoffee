@@ -1,5 +1,9 @@
 ${header}
-<p>
-    ${pet}
-</p>
+<h3>${orderType}</h3>
+<ul>
+    ${
+        orders.map(o => `<li>${o}</li>`)
+              .join('')
+    }
+</ul>
 ${footer}
