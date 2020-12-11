@@ -3,8 +3,6 @@ const express = require('express');
 const morgan = require('morgan');
 const es6Renderer = require('express-es6-template-engine');
 
-const pets = require('./pets');
-
 const PORT = 3000;
 
 const app = express();
